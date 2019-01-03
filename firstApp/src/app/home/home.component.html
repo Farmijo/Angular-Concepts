@@ -1,0 +1,17 @@
+<p>
+  Parrafo del componente {{ componente }}
+</p>
+<div>
+<a [href]="url">Enlace referenciado hacia google con corchetes property binding  </a>
+<a href="{{url}}">Enlace referenciado hacia google con llaves  </a>
+<br>
+
+En la vista del componente lo que se ve es [href]="url", en el ts del componente define la variable url. Al compilar, url se sustituye por lo que toque.
+Tambien se puede hacer por interpolación de strings con las llaves
+</div>
+
+<div> 
+  Propiedad de boton desactivado. Con property binding:
+  <button [disabled]="disabled">Property binding activo</button>
+  <button [disabled]="! disabled">Property binding desactivado</button>
+</div>
