@@ -11,7 +11,14 @@ Tambien se puede hacer por interpolación de strings con las llaves
 </div>
 
 <div> 
-  Propiedad de boton desactivado. Con property binding:
-  <button [disabled]="disabled">Property binding activo</button>
-  <button [disabled]="! disabled">Property binding desactivado</button>
+  <h2></h2>Propiedad de boton desactivado. Con property binding:
+  <button [disabled]="disabled" (click) = "interpolation()" >Property binding activo</button>
+  <button [disabled]="! disabled" (click) = "interpolation()">Property binding desactivado</button>
+
+  <h2>Llamada a metodo add()</h2>
+  <div> <Button (click)="add()">Add quantity</Button>
+  Has hecho {{clicks}} clicks
+  </div>
+  
+  
 </div>
