@@ -1,0 +1,9 @@
+<div [class.currentlyActive]="activo"> 
+  <h2>Directiva ngIf</h2>
+  <Button (click)="intercambio()">Cambiar Interruptor</Button>
+
+  <p *ngIf="activo; else inactivo">Activo</p>
+  <ng-template #inactivo>
+    <p>Ya no esta activo</p>
+  </ng-template>
+</div>

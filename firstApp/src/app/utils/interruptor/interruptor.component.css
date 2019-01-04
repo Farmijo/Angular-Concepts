@@ -1,3 +1,7 @@
+.currentlyActive{
+    color: red;
+}
+
 div{
     margin: 20 px;
     border: 1px solid #dddddd
